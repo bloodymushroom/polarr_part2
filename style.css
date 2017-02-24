@@ -1,0 +1,60 @@
+body {
+	height: 100vh;
+	width: 100%;
+	font-family: helvetica;
+}
+
+#app {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.low-header {
+	align-self: flex-end;
+	text-align: center;
+	margin-top: -10%;
+	opacity: 0.5;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	width: 360px;
+}
+
+.item {
+	position: relative;
+	height: 100px;
+	width: 100px;
+	margin: 9px;
+	transition: opacity 0.2s;}
+
+.item .playing {
+	opacity: 1;
+	transition: none;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-blend-mode: screen;
+	background-size: 100%;
+	background-position: center;
+	border-radius: 20%;
+	background-image: radial-gradient(black 0%, white 110%), url('https://s-media-cache-ak0.pinimg.com/originals/57/94/b1/5794b1fe1fb88b00b07446a9a29d7cb9.gif');	
+
+}
+
+.item > img {
+	padding: 20%;
+	opacity: 0.5;
+	height: 60%;
+	width: 60%;
+	color: blue;
+	transition: opacity 0.2s;
+}
+
+
+.item > img:hover {
+	opacity: 1;
+}
