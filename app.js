@@ -146,3 +146,5 @@ function playSong(index, e) {
     nowPlaying = audio;
   }, 800)
 }
+
+// finish!
