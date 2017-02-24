@@ -137,10 +137,6 @@ function playSong(index, e) {
     activeButton = e.target;
     activeButton.classList.toggle('playing');
 
-    while (e.target.className.includes('playing')) {
-        throttle(() => console.log('playing'), 1000)();
-    }
-
     // reset the audio to 0:00 and play it
     var audio = document.querySelector(`audio[data-index="${index}"]`)
     audio.currentTime = 0;
